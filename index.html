@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software House | Sites, Automação e Mídias</title>
+    <!-- Importação do Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Importação da fonte Inter (similar à da imagem) --><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Aplicando a fonte Inter como padrão */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Efeito de scroll suave */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Estilo para o botão de filtro ativo */
+        .filter-button.active {
+            background-color: #1a202c; /* Cor de fundo mais escura */
+            color: #ffffff; /* Texto branco */
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+
+    <!-- 1. Header / Navegação --><header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo --><a href="#" class="text-3xl font-bold text-gray-900">
+                Code<span class="text-blue-700">Flow</span>
+            </a>
+            <!-- Links de Navegação --><div class="hidden md:flex space-x-6">
+                <a href="#servicos" class="text-gray-700 hover:text-blue-700 font-semibold transition duration-300">Serviços</a>
+                <a href="#portfolio" class="text-gray-700 hover:text-blue-700 font-semibold transition duration-300">Portfólio</a>
+                <a href="#sobre" class="text-gray-700 hover:text-blue-700 font-semibold transition duration-300">Sobre Nós</a>
+                <a href="#contato" class="bg-gray-800 text-white py-2 px-5 rounded-lg font-semibold hover:bg-gray-700 transition duration-300">
+                    Fale Conosco
+                </a>
+            </div>
+            <!-- Menu Mobile (placeholder) --><div class="md:hidden">
+                <button class="text-gray-900">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- 2. Seção Hero (Inspirada na imagem) --><section class="relative text-white" style="background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'); background-size: cover; background-position: center;">
+            <!-- Overlay escuro para legibilidade --><div class="absolute inset-0 bg-gray-900 opacity-80"></div>
+            
+            <!-- Conteúdo --><div class="relative container mx-auto px-6 py-32 md:py-48 text-center">
+                <h1 class="text-4xl md:text-6xl font-black mb-4 leading-tight">
+                    Promovendo a transformação digital da sua empresa
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
+                    Compreendemos as demandas do mercado atual e focamos nossos serviços em prol da transformação digital de pequenas e médias empresas.
+                </p>
+                <a href="#contato" class="bg-white text-gray-900 font-bold py-3 px-10 rounded-lg text-lg hover:bg-gray-200 transition duration-300">
+                    Entre em Contato
+                </a>
+            </div>
+        </section>
+
+        <!-- 3. Nossos Serviços (Baseado na imagem) --><section id="servicos" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <!-- Título da Seção --><h2 class="text-4xl font-bold text-center text-gray-900 mb-16">
+                    Nossos Serviços
+                </h2>
+                
+                <!-- Grid de Serviços --><div class="grid md:grid-cols-3 gap-8">
+                    
+                    <!-- Card 1: Desenvolvimento de Sites --><div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 text-center transform hover:-translate-y-2 transition duration-300">
+                        <!-- Ícone (similar ao da imagem) --><div class="w-20 h-20 bg-gray-800 text-white rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Desenvolvimento de Sites</h3>
+                        <p class="text-gray-600 mb-6">
+                            Websites responsivos, institucionais e e-commerces modernos para impulsionar sua presença digital.
+                        </p>
+                        <a href="#" class="font-semibold text-gray-800 hover:text-blue-700 transition duration-300">
+                            Saiba Mais &rarr;
+                        </a>
+                    </div>
+                    
+                    <!-- Card 2: Automação de Processos --><div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 text-center transform hover:-translate-y-2 transition duration-300">
+                        <!-- Ícone --><div class="w-20 h-20 bg-gray-800 text-white rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.096 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Automação de Processos</h3>
+                        <p class="text-gray-600 mb-6">
+                            Otimize suas operações e reduza custos com soluções automatizadas e inteligentes (RPA e scripts).
+                        </p>
+                        <a href="#" class="font-semibold text-gray-800 hover:text-blue-700 transition duration-300">
+                            Saiba Mais &rarr;
+                        </a>
+                    </div>
+                    
+                    <!-- Card 3: Gestão de Mídias --><div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 text-center transform hover:-translate-y-2 transition duration-300">
+                        <!-- Ícone --><div class="w-20 h-20 bg-gray-800 text-white rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.144-6.124M11 5.882l2.28 2.28m-2.28-2.28l-2.28 2.28m2.28-2.28V5.882zM15 12a3 3 0 11-6 0 3 3 0 016 0zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Gestão de Mídias Digitais</h3>
+                        <p class="text-gray-600 mb-6">
+                            Planejamento estratégico, criação de conteúdo e gestão de anúncios para fortalecer sua marca online.
+                        </p>
+                        <a href="#" class="font-semibold text-gray-800 hover:text-blue-700 transition duration-300">
+                            Saiba Mais &rarr;
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <!-- 4. Seção Portfólio (Mais interessante e com filtros) --><section id="portfolio" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center text-gray-900 mb-6">
+                    Projetos Que Se Destacam
+                </h2>
+                <p class="text-lg text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                    Explore nossos trabalhos e veja como aplicamos a tecnologia para impulsionar diferentes tipos de negócios.
+                </p>
+                
+                <!-- Botões de Filtro --><div class="flex flex-wrap justify-center gap-4 mb-12">
+                    <button class="filter-button bg-gray-200 text-gray-800 py-3 px-8 rounded-full font-semibold hover:bg-gray-300 transition duration-300 active" data-filter="all">Todos</button>
+                    <button class="filter-button bg-gray-200 text-gray-800 py-3 px-8 rounded-full font-semibold hover:bg-gray-300 transition duration-300" data-filter="sites">Sites</button>
+                    <button class="filter-button bg-gray-200 text-gray-800 py-3 px-8 rounded-full font-semibold hover:bg-gray-300 transition duration-300" data-filter="automacao">Automação</button>
+                    <button class="filter-button bg-gray-200 text-gray-800 py-3 px-8 rounded-full font-semibold hover:bg-gray-300 transition duration-300" data-filter="midias">Mídias Digitais</button>
+                </div>
+                
+                <!-- Grid do Portfólio --><div id="portfolio-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Item 1: Site Corporativo (Categoria: sites) --><div class="portfolio-item bg-white rounded-lg shadow-xl overflow-hidden group border border-gray-200" data-category="sites">
+                        <div class="relative overflow-hidden">
+                            <img src="https://placehold.co/600x400/2c3e50/ecf0f1?text=Website+Empresa+X" alt="Website Corporativo da Empresa X" class="w-full h-60 object-cover group-hover:scale-110 transition duration-500 ease-in-out">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                                <h3 class="text-white text-xl font-bold">Empresa X</h3>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-sm text-blue-700 font-semibold bg-blue-50 px-3 py-1 rounded-full">Desenvolvimento Web</span>
+                            <h4 class="text-lg font-bold my-2 text-gray-900">Plataforma Institucional</h4>
+                            <p class="text-gray-600 text-sm mb-4">Desenvolvemos um site responsivo e otimizado para a Empresa X, com foco em usabilidade e design moderno, elevando sua presença online e geração de leads.</p>
+                            <a href="#" class="text-blue-700 font-semibold hover:underline flex items-center">
+                                Ver Projeto 
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2: Automação Financeira (Categoria: automacao) --><div class="portfolio-item bg-white rounded-lg shadow-xl overflow-hidden group border border-gray-200" data-category="automacao">
+                        <div class="relative overflow-hidden">
+                            <img src="https://placehold.co/600x400/2c3e50/ecf0f1?text=Automação+Startup+Y" alt="Automação Financeira para Startup Y" class="w-full h-60 object-cover group-hover:scale-110 transition duration-500 ease-in-out">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                                <h3 class="text-white text-xl font-bold">Startup Y</h3>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-sm text-green-700 font-semibold bg-green-50 px-3 py-1 rounded-full">Automação de Processos</span>
+                            <h4 class="text-lg font-bold my-2 text-gray-900">Otimização de Fluxo Financeiro</h4>
+                            <p class="text-gray-600 text-sm mb-4">Implementamos um sistema de RPA para a Startup Y, automatizando a conciliação bancária e a geração de relatórios, economizando horas de trabalho manual.</p>
+                            <a href="#" class="text-blue-700 font-semibold hover:underline flex items-center">
+                                Ver Projeto 
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Mídias Sociais Varejista (Categoria: midias) --><div class="portfolio-item bg-white rounded-lg shadow-xl overflow-hidden group border border-gray-200" data-category="midias">
+                        <div class="relative overflow-hidden">
+                            <img src="https://placehold.co/600x400/2c3e50/ecf0f1?text=Mídias+Varejista+Z" alt="Mídias Sociais para Varejista Z" class="w-full h-60 object-cover group-hover:scale-110 transition duration-500 ease-in-out">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                                <h3 class="text-white text-xl font-bold">Varejista Z</h3>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-sm text-purple-700 font-semibold bg-purple-50 px-3 py-1 rounded-full">Marketing Digital</span>
+                            <h4 class="text-lg font-bold my-2 text-gray-900">Estratégia e Gestão de Campanhas</h4>
+                            <p class="text-gray-600 text-sm mb-4">Desenvolvemos uma estratégia de marketing digital completa para a Varejista Z, focando em conteúdo, anúncios e gestão de comunidades, gerando alto engajamento.</p>
+                            <a href="#" class="text-blue-700 font-semibold hover:underline flex items-center">
+                                Ver Projeto 
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: E-commerce de Moda (Categoria: sites, midias) --><div class="portfolio-item bg-white rounded-lg shadow-xl overflow-hidden group border border-gray-200" data-category="sites midias">
+                        <div class="relative overflow-hidden">
+                            <img src="https://placehold.co/600x400/2c3e50/ecf0f1?text=E-commerce+Moda" alt="E-commerce de Moda" class="w-full h-60 object-cover group-hover:scale-110 transition duration-500 ease-in-out">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                                <h3 class="text-white text-xl font-bold">Marca de Moda</h3>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-sm text-blue-700 font-semibold bg-blue-50 px-3 py-1 rounded-full mr-2">Desenvolvimento Web</span>
+                            <span class="text-sm text-purple-700 font-semibold bg-purple-50 px-3 py-1 rounded-full">Marketing Digital</span>
+                            <h4 class="text-lg font-bold my-2 text-gray-900">Loja Virtual e Campanhas</h4>
+                            <p class="text-gray-600 text-sm mb-4">Construímos um e-commerce moderno e integramos com campanhas de mídia digital para uma marca de moda, resultando em aumento de vendas.</p>
+                            <a href="#" class="text-blue-700 font-semibold hover:underline flex items-center">
+                                Ver Projeto 
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                     <!-- Item 5: Sistema de Gerenciamento Interno (Categoria: automacao, sites) --><div class="portfolio-item bg-white rounded-lg shadow-xl overflow-hidden group border border-gray-200" data-category="automacao sites">
+                        <div class="relative overflow-hidden">
+                            <img src="https://placehold.co/600x400/2c3e50/ecf0f1?text=Sistema+Interno+Empresa" alt="Sistema de Gerenciamento Interno" class="w-full h-60 object-cover group-hover:scale-110 transition duration-500 ease-in-out">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                                <h3 class="text-white text-xl font-bold">Empresa de Logística</h3>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-sm text-green-700 font-semibold bg-green-50 px-3 py-1 rounded-full mr-2">Automação de Processos</span>
+                            <span class="text-sm text-blue-700 font-semibold bg-blue-50 px-3 py-1 rounded-full">Desenvolvimento Web</span>
+                            <h4 class="text-lg font-bold my-2 text-gray-900">Sistema Interno Personalizado</h4>
+                            <p class="text-gray-600 text-sm mb-4">Desenvolvemos um sistema web interno que automatiza a gestão de estoque e pedidos, integrado com a área de logística para otimização.</p>
+                            <a href="#" class="text-blue-700 font-semibold hover:underline flex items-center">
+                                Ver Projeto 
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 6: Campanha de Lançamento de Produto (Categoria: midias) --><div class="portfolio-item bg-white rounded-lg shadow-xl overflow-hidden group border border-gray-200" data-category="midias">
+                        <div class="relative overflow-hidden">
+                            <img src="https://placehold.co/600x400/2c3e50/ecf0f1?text=Campanha+Produto+Tech" alt="Campanha de Lançamento de Produto Tech" class="w-full h-60 object-cover group-hover:scale-110 transition duration-500 ease-in-out">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                                <h3 class="text-white text-xl font-bold">Lançamento Tech</h3>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-sm text-purple-700 font-semibold bg-purple-50 px-3 py-1 rounded-full">Marketing Digital</span>
+                            <h4 class="text-lg font-bold my-2 text-gray-900">Lançamento de Produto Digital</h4>
+                            <p class="text-gray-600 text-sm mb-4">Criamos uma campanha de mídia digital multicanal para o lançamento de um novo produto tecnológico, alcançando milhões de impressões e leads.</p>
+                            <a href="#" class="text-blue-700 font-semibold hover:underline flex items-center">
+                                Ver Projeto 
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. CTA (Chamada para Ação) - (Similar ao "Faça um Orçamento") --><section class="py-20 bg-gray-800 text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold mb-6">
+                    Pronto para impulsionar seu negócio?
+                </h2>
+                <p class="text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
+                    Vamos conversar sobre seu projeto. Solicite um orçamento sem compromisso e descubra como podemos ajudar.
+                </p>
+                <a href="#contato" class="bg-white text-gray-900 font-bold py-3 px-10 rounded-lg text-lg hover:bg-gray-200 transition duration-300">
+                    Faça Um Orçamento
+                </a>
+            </div>
+        </section>
+
+        <!-- 6. Sobre Nós (Similar ao "Tudo isso por um preço...") --><section id="sobre" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-6 text-center max-w-3xl">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">
+                    Sua parceira de tecnologia e inovação
+                </h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Somos mais do que uma software house; somos seus parceiros estratégicos na jornada digital. Nossa equipe é apaixonada por resolver problemas complexos com tecnologia de ponta.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed mt-4">
+                    Combinamos expertise técnica em desenvolvimento, automação e marketing digital para entregar soluções que não apenas funcionam, mas que geram resultados reais e mensuráveis para o seu negócio.
+                </p>
+            </div>
+        </section>
+
+        <!-- 7. Formulário de Contato --><section id="contato" class="py-24 bg-white">
+            <div class="container mx-auto px-6 max-w-2xl">
+                <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">
+                    Vamos conversar
+                </h2>
+                <form class="space-y-6">
+                    <!-- Nome --><div>
+                        <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Seu Nome</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                    </div>
+                    <!-- Email --><div>
+                        <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Seu E-mail</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                    </div>
+                    <!-- Assunto --><div>
+                        <label for="subject" class="block text-sm font-semibold text-gray-700 mb-2">Assunto</label>
+                        <input type="text" id="subject" name="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    </div>
+                    <!-- Mensagem --><div>
+                        <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Sua Mensagem</label>
+                        <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required></textarea>
+                    </div>
+                    <!-- Botão Enviar --><div>
+                        <button type="submit" class="w-full bg-gray-800 text-white font-bold py-4 px-8 rounded-lg text-lg hover:bg-gray-700 transition duration-300">
+                            Enviar Mensagem
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 8. Footer --><footer class="py-10 bg-gray-900 text-gray-400">
+        <div class="container mx-auto px-6 text-center">
+            <!-- Você pode adicionar links de redes sociais ou navegação aqui --><p>&copy; 2025 CodeFlow Software House. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-button');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove a classe 'active' de todos os botões
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Adiciona a classe 'active' ao botão clicado
+                    this.classList.add('active');
+
+                    const filter = this.dataset.filter; // 'all', 'sites', 'automacao', 'midias'
+
+                    portfolioItems.forEach(item => {
+                        const categories = item.dataset.category.split(' '); // Obtém as categorias do item
+
+                        if (filter === 'all' || categories.includes(filter)) {
+                            item.style.display = 'block'; // Mostra o item
+                        } else {
+                            item.style.display = 'none'; // Esconde o item
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
